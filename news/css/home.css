@@ -14,7 +14,10 @@ body,html,a,li,ul,h6{
         width:100%;
         height:0.84rem;
         background:#df3031;
-        position:relative;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 12;
     }
     .header span{
         color:#fff;
@@ -34,12 +37,24 @@ body,html,a,li,ul,h6{
         margin:auto;
         background:url(../img/search.png);
         background-size:100% 100%;
+        z-index:2;
     }
-
+    .back-home{
+        width:0.6rem;
+        height:100%;
+        float: left;
+        font-size: 0.5rem;
+        color:#fff;
+        line-height: 0.84rem;
+        margin-left:0.2rem;
+        position:relative;
+        z-index:2;
+    }
 /*banner*/
     .swiper-container{
         width:100%;
         height:3.8rem;
+        margin-top:0.84rem;
     }
     /* .swiper-container .swiper-slide{
         width:100%;
@@ -125,24 +140,26 @@ body,html,a,li,ul,h6{
         bottom:0.05rem;
         color:#9f9f9f;
     }
-    .list1-1>a{
-        color:#333;
-        font-size:0.29rem;
-        margin:0;
-        padding:0;
-        display:block;
-        height:0.3rem;
-    }
+    
 
 /*列表1-1*/
     .list1-1{
         width:100%;
         height:3.87rem;
         border-top:1px solid #ccc;
-        border-bottom:1px solid #ccc;
+        /*border-bottom:1px solid #ccc;*/
         padding:0.2rem 0;
         position:relative;
-    }   
+    } 
+    .list1-1>a{
+        color:#333;
+        font-size:0.29rem;
+        /*margin:0;*/
+        /*padding:0;*/
+        display:block;
+        height:0.3rem;
+        margin-bottom:0.2rem;
+    }  
     h6{
         font-size: 0.29rem;
         color:#333;
@@ -155,17 +172,17 @@ body,html,a,li,ul,h6{
         height:2.4rem;
         background:url(../img/list1-1.png);
     }
-    .list1-1 span:nth-child(1){
+    .list1-1 span:nth-child(3){
         position:absolute;
         left:0;
         color:#9f9f9f;
-        bottom:0rem;
+        bottom:0.1rem;
         font-size: 0.2rem;
     }
-    .list1-1 span:nth-child(2){
+    .list1-1 span:nth-child(4){
         position:absolute;
         right:0;
-        bottom:0.05rem;
+        bottom:0.1rem;
         font-size: 0.2rem;
         color:#9f9f9f;
     }
@@ -202,13 +219,16 @@ body,html,a,li,ul,h6{
 /*导航*/
     .hot{
         width:100%;
-        height:1.95rem;
+        height:1.5rem;
         display:flex;
         border-top:20px solid #fefefe;
         justify-content:spance-around;
         font-size: 0.18rem;
         text-align: center;
         background:#fefefe;
+        position:fixed;
+        bottom:0;
+        left:0;
     }
     .hot-list .tubiao{
         height:0.44rem;
@@ -238,5 +258,6 @@ body,html,a,li,ul,h6{
         background-size:100% 100%;
     }
     .hot-list a{
-        color:#333;
+        color:rgba(0,0,0,0.7);
+        font-size: 0.23rem;
     }

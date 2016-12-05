@@ -14,7 +14,10 @@ body,html,a,li,ul,h6{
         width:100%;
         height:0.84rem;
         background:#df3031;
-        position:relative;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 12;
     }
     .header span{
         color:#fff;
@@ -34,8 +37,19 @@ body,html,a,li,ul,h6{
         margin:auto;
         background:url(../img/search.png);
         background-size:100% 100%;
+        z-index:2;
     }
-
+    .back-home{
+        width:0.6rem;
+        height:100%;
+        float: left;
+        font-size: 0.5rem;
+        color:#fff;
+        line-height: 0.84rem;
+        margin-left:0.2rem;
+        position:relative;
+        z-index:2;
+    }
 
 /*列表页*/
     .list1{
@@ -43,6 +57,7 @@ body,html,a,li,ul,h6{
         width:100%;
         height:auto;
         padding:0.2rem;
+        margin-top:0.84rem;
     }
     .list1 .list1-con{
         width:7rem;
@@ -70,6 +85,8 @@ body,html,a,li,ul,h6{
     }
     .list1 .list1-zi a{
         color:#333;
+        display: block;
+        padding-left:0.3rem;
     }
     .list1 .list1-zi span:nth-child(2){
         position:absolute;
@@ -91,7 +108,6 @@ body,html,a,li,ul,h6{
         display:block;
         height:0.3rem;
     }
-
 p{
     color:#333;
     margin:0;
@@ -99,6 +115,7 @@ p{
     padding-top:0;
     font-size: 0.2rem;
     text-indent: 2em;
+    margin-bottom:1.96rem;
 }
 /*导航*/
     .hot{
@@ -110,6 +127,9 @@ p{
         font-size: 0.18rem;
         text-align: center;
         background:#fefefe;
+        position:fixed;
+        bottom:0;
+        left:0;
     }
     .hot-list .tubiao{
         height:0.44rem;

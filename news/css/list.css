@@ -14,7 +14,10 @@ body,html,a,li,ul,h6{
         width:100%;
         height:0.84rem;
         background:#df3031;
-        position:relative;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 12;
     }
     .header span{
         color:#fff;
@@ -34,8 +37,19 @@ body,html,a,li,ul,h6{
         margin:auto;
         background:url(../img/search.png);
         background-size:100% 100%;
+        z-index:2;
     }
-
+    .back-home{
+        width:0.6rem;
+        height:100%;
+        float: left;
+        font-size: 0.5rem;
+        color:#fff;
+        line-height: 0.84rem;
+        margin-left:0.2rem;
+        position:relative;
+        z-index:2;
+    }
 
 /*列表页*/
     .list1{
@@ -43,6 +57,7 @@ body,html,a,li,ul,h6{
         width:100%;
         height:auto;
         padding:0.2rem;
+        margin-top:0.84rem;
     }
     .list1 .list1-con{
         width:7rem;
@@ -70,6 +85,8 @@ body,html,a,li,ul,h6{
     }
     .list1 .list1-zi a{
         color:#333;
+        display: block;
+        padding-left:0.3rem;
     }
     .list1 .list1-zi span:nth-child(2){
         position:absolute;
@@ -92,71 +109,7 @@ body,html,a,li,ul,h6{
         height:0.3rem;
     }
 
-/*列表1-1*/
-    /* .list1-1{
-        width:100%;
-        height:3.87rem;
-        border-top:1px solid #ccc;
-        border-bottom:1px solid #ccc;
-        padding:0.2rem 0;
-        position:relative;
-    }
-    h6{
-        font-size: 0.29rem;
-        color:#333;
-        height:auto;
-        margin-bottom:0.2rem;
-        font-weight:normal;
-    }
-    .list1-1-img{
-        width:100%;
-        height:2.4rem;
-        background:url(../img/list1-1.png);
-    }
-    .list1-1 span:nth-child(1){
-        position:absolute;
-        left:0;
-        color:#9f9f9f;
-        bottom:0rem;
-        font-size: 0.2rem;
-    }
-    .list1-1 span:nth-child(2){
-        position:absolute;
-        right:0;
-        bottom:0.05rem;
-        font-size: 0.2rem;
-        color:#9f9f9f;
-    }
-    
-    .list2-img{
-        width:100%;
-        height:2.4rem;
-        display: flex;
-        justify-content:space-around;
-    }
-    .list2-img div{
-        width:2rem;
-    }
-    .list2-img div:nth-child(1){
-        width:;
-        margin-right:0.2rem;
-        background:url(../img/news1.png);
-        background-size:100% 100%;
-    }
-    .list2-img div:nth-child(2){
-        width:;
-        margin-right:0.2rem;
-        background:url(../img/news2.png);
-        background-size:100% 100%;
-    
-    }
-    .list2-img div:nth-child(3){
-        width:;
-        background:url(../img/news3.png);
-        background-size:100% 100%;
-    
-    }
-     */
+
 /*导航*/
     .hot{
         width:100%;
@@ -167,6 +120,9 @@ body,html,a,li,ul,h6{
         font-size: 0.18rem;
         text-align: center;
         background:#fefefe;
+        position:fixed;
+        bottom:0;
+        left:0;
     }
     .hot-list .tubiao{
         height:0.44rem;

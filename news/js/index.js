@@ -21,8 +21,15 @@ $(function(){
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
         }
     })
-//首页
+//导航
+    /*$(window).scroll(function(){
+        var tops=$("body").scrollTop();
+        if(tops<=heights){
+            
+        }
+    })*/
 
+    
 
 
 
