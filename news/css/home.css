@@ -7,231 +7,236 @@ body,html,a,li,ul,h6{
     list-style: none;
 }
 *{
-	box-sizing:border-box;
+    box-sizing:border-box;
 }
 /*头部*/
-	.header{
-	    width:100%;
-	    height:0.84rem;
-	    background:#df3031;
-	    position:relative;
-	}
-	.header span{
-		color:#fff;
-		font-size:0.4rem;
-		text-align: center;
-		line-height:0.84rem;
-		position:absolute;
-		top:0;bottom:0;left:0;right:0;
-		margin:auto;
-	}
-	.search{
-		width:0.4rem;
-		height:0.4rem;
-		position:absolute;
-		right:0.37rem;
-		top:0;bottom:0;
-		margin:auto;
-		background:url(../img/search.png);
-		background-size:100% 100%;
-	}
+    .header{
+        width:100%;
+        height:0.84rem;
+        background:#df3031;
+        position:relative;
+    }
+    .header span{
+        color:#fff;
+        font-size:0.4rem;
+        text-align: center;
+        line-height:0.84rem;
+        position:absolute;
+        top:0;bottom:0;left:0;right:0;
+        margin:auto;
+    }
+    .search{
+        width:0.4rem;
+        height:0.4rem;
+        position:absolute;
+        right:0.37rem;
+        top:0;bottom:0;
+        margin:auto;
+        background:url(../img/search.png);
+        background-size:100% 100%;
+    }
 
 /*banner*/
     .swiper-container{
-    	width:100%;
-    	height:3.8rem;
-    	position:relative;
+        width:100%;
+        height:3.8rem;
     }
-    .swiper-container .swiper-slide{
-    	width:100%;
-    	height:3.8rem;
-    }
+    /* .swiper-container .swiper-slide{
+        width:100%;
+        height:3.8rem;
+    } */
+
     .swiper-slide:nth-child(1){
-    	background:url(../img/banner1.png);
-    	background-size:100% 100%;
+        background:url(../img/banner1.png);
+        background-size:100% 100%;
     }
-    .swiper-pagination{
-    	position:absolute;
-        right:0.2rem;
-        bottom:0.2rem;
+    #wheels{
+        position:absolute;
+        left:4.5rem;
+        bottom:0.1rem;
+        width:3rem;
     }
     .swiper-pagination-bullet{
-    	background:#fff;
+        background:#fff;
     }
     .swiper-pagination-bullet-active{
-    	background:#f67172;
+        background:#f67172;
     }
     .swiper-container .ban-font-box{
-    	position:absolute;
-    	height: 0.8rem;
-    	width:100%;
-    	left:0;
-    	bottom:0;
-    	background:rgba(0,0,0,0,5);
-    	z-index: 11;
+        position:absolute;
+        height: 0.8rem;
+        width:100%;
+        left:0;
+        bottom:0;
+        background:rgba(0,0,0,0.3);
+        z-index: 20;
     }
-    .swiper-container .ban-font-box  .ban-font{
-    	margin:0;
-    	padding:0;
-        font-size: 0.35rem;
+    .swiper-container .ban-font-box  .ban-fonts{
+        margin:0;
+        float:left;
+        padding:0;
+        padding-top:0.2rem;
+        padding-left:0.2rem;
+        font-size: 0.25rem;
         color:#df3031;
+        line-height: 0.5rem;
     }
 
 /*列表页*/
     .list1{
-    	border-top:2px solid #ccc;
-    	width:100%;
-    	height:auto;
-    	padding:0.2rem;
+        border-top:2px solid #ccc;
+        width:100%;
+        height:auto;
+        padding:0.2rem;
     }
     .list1 .list1-con{
-    	width:100%;
-    	height:1.87rem;
-    	font-size: 0.29rem;
-    	color:#333;
-    	margin-bottom:0.2rem;
+        width:100%;
+        height:1.87rem;
+        font-size: 0.29rem;
+        color:#333;
+        margin-bottom:0.2rem;
     }
     .list1 .list1-img{
-    	width:2rem;
-    	height:100%;
-    	float:left;
-    	margin-right:0.26rem;
-    	background:url(../img/huping.JPG);
-    	background-size:100% 100%;
+        width:2rem;
+        height:100%;
+        float:left;
+        margin-right:0.26rem;
+        background:url(../img/huping.JPG);
+        background-size:100% 100%;
     }
     .list1 .list1-zi{
-    	width:4.40rem;
-    	float:left;
-    	height:100%;
-    	position:relative;
+        width:4.40rem;
+        float:left;
+        height:100%;
+        position:relative;
     }
-	.list1 .list1-zi a{
-		color:#333;
-	}
+    .list1 .list1-zi a{
+        color:#333;
+    }
     .list1 .list1-zi span:nth-child(2){
-    	position:absolute;
-    	left:0;
-    	color:#9f9f9f;
-    	bottom:0.05rem;
+        position:absolute;
+        left:0;
+        color:#9f9f9f;
+        bottom:0.05rem;
     }
     .list1 .list1-zi span:nth-child(3){
-    	position:absolute;
-    	right:0;
-    	bottom:0.05rem;
-    	color:#9f9f9f;
+        position:absolute;
+        right:0;
+        bottom:0.05rem;
+        color:#9f9f9f;
     }
-	.list1-1>a{
-		color:#333;
-		font-size:0.29rem;
-		margin:0;
-		padding:0;
-		display:block;
-		height:0.3rem;
-	}
+    .list1-1>a{
+        color:#333;
+        font-size:0.29rem;
+        margin:0;
+        padding:0;
+        display:block;
+        height:0.3rem;
+    }
 
 /*列表1-1*/
     .list1-1{
-    	width:100%;
-    	height:3.87rem;
-    	border-top:1px solid #ccc;
-    	border-bottom:1px solid #ccc;
-    	padding:0.2rem 0;
-    	position:relative;
+        width:100%;
+        height:3.87rem;
+        border-top:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        padding:0.2rem 0;
+        position:relative;
     }   
     h6{
-    	font-size: 0.29rem;
-    	color:#333;
-    	height:auto;
-    	margin-bottom:0.2rem;
-		font-weight:normal;
+        font-size: 0.29rem;
+        color:#333;
+        height:auto;
+        margin-bottom:0.2rem;
+        font-weight:normal;
     }
     .list1-1-img{
-    	width:100%;
-    	height:2.4rem;
-    	background:url(../img/list1-1.png);
+        width:100%;
+        height:2.4rem;
+        background:url(../img/list1-1.png);
     }
     .list1-1 span:nth-child(1){
-    	position:absolute;
-    	left:0;
-    	color:#9f9f9f;
-    	bottom:0rem;
-    	font-size: 0.2rem;
+        position:absolute;
+        left:0;
+        color:#9f9f9f;
+        bottom:0rem;
+        font-size: 0.2rem;
     }
     .list1-1 span:nth-child(2){
-    	position:absolute;
-    	right:0;
-    	bottom:0.05rem;
-    	font-size: 0.2rem;
-    	color:#9f9f9f;
+        position:absolute;
+        right:0;
+        bottom:0.05rem;
+        font-size: 0.2rem;
+        color:#9f9f9f;
     }
 
     .list2-img{
-    	width:100%;
-    	height:2.4rem;
-    	display: flex;
-    	justify-content:space-around;
+        width:100%;
+        height:2.4rem;
+        display: flex;
+        justify-content:space-around;
     }
     .list2-img div{
         width:2rem;
     }
     .list2-img div:nth-child(1){
-    	/*width:;*/
-		margin-right:0.2rem;
-    	background:url(../img/news1.png);
-		background-size:100% 100%;
+        /*width:;*/
+        margin-right:0.2rem;
+        background:url(../img/news1.png);
+        background-size:100% 100%;
     }
     .list2-img div:nth-child(2){
-		 /*width:;*/
-		 margin-right:0.2rem;
-		 background:url(../img/news2.png);
-		background-size:100% 100%;
+         /*width:;*/
+         margin-right:0.2rem;
+         background:url(../img/news2.png);
+        background-size:100% 100%;
 
-	}
+    }
     .list2-img div:nth-child(3){
-	    /*width:;*/
-	    background:url(../img/news3.png);
-		background-size:100% 100%;
+        /*width:;*/
+        background:url(../img/news3.png);
+        background-size:100% 100%;
 
-	}
+    }
 
 /*导航*/
     .hot{
-    	width:100%;
-    	height:1.95rem;
-    	display:flex;
-    	border-top:20px solid #fefefe;
-    	justify-content:spance-around;
-    	font-size: 0.18rem;
-    	text-align: center;
-    	background:#fefefe;
+        width:100%;
+        height:1.95rem;
+        display:flex;
+        border-top:20px solid #fefefe;
+        justify-content:spance-around;
+        font-size: 0.18rem;
+        text-align: center;
+        background:#fefefe;
     }
     .hot-list .tubiao{
-    	height:0.44rem;
-    	width: 0.46rem;
-    	margin:auto;
+        height:0.44rem;
+        width: 0.46rem;
+        margin:auto;
         margin-bottom:0.08rem;
     }
 
     .hot-list:nth-child(1) .tubiao{
-    	background:url(../img/nav1.png);
-    	background-size:100% 100%;
+        background:url(../img/nav1.png);
+        background-size:100% 100%;
     }
     .hot-list:nth-child(2) .tubiao{
-    	background:url(../img/nav2.png);
-    	background-size:100% 100%;
+        background:url(../img/nav2.png);
+        background-size:100% 100%;
     }
     .hot-list:nth-child(3) .tubiao{
-    	background:url(../img/nav3.png);
-    	background-size:100% 100%;
+        background:url(../img/nav3.png);
+        background-size:100% 100%;
     }
     .hot-list:nth-child(4) .tubiao{
-    	background:url(../img/nav4.png);
-    	background-size:100% 100%;
+        background:url(../img/nav4.png);
+        background-size:100% 100%;
     }
     .hot-list:nth-child(5) .tubiao{
-    	background:url(../img/nav5.png);
-    	background-size:100% 100%;
+        background:url(../img/nav5.png);
+        background-size:100% 100%;
     }
-	.hot-list a{
-		color:#333;
-	}
+    .hot-list a{
+        color:#333;
+    }

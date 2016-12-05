@@ -2,7 +2,6 @@ $(function(){
  // 闪屏页   
     var widths=$(window).width();
     var heights=$(window).height();
-    $(".swiper-slide").css({"height":heights+"px","width":widths+"px"});
     function resize(origin){
         var html= document.getElementsByTagName("html")[0];
         html.style.fontSize=widths/origin*100+"px";
