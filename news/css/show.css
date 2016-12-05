@@ -1,0 +1,143 @@
+body,html,a,li,ul,h6{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+    list-style: none;
+}
+*{
+    box-sizing:border-box;
+}
+/*头部*/
+    .header{
+        width:100%;
+        height:0.84rem;
+        background:#df3031;
+        position:relative;
+    }
+    .header span{
+        color:#fff;
+        font-size:0.4rem;
+        text-align: center;
+        line-height:0.84rem;
+        position:absolute;
+        top:0;bottom:0;left:0;right:0;
+        margin:auto;
+    }
+    .search{
+        width:0.4rem;
+        height:0.4rem;
+        position:absolute;
+        right:0.37rem;
+        top:0;bottom:0;
+        margin:auto;
+        background:url(../img/search.png);
+        background-size:100% 100%;
+    }
+
+
+/*列表页*/
+    .list1{
+        border-top:2px solid #ccc;
+        width:100%;
+        height:auto;
+        padding:0.2rem;
+    }
+    .list1 .list1-con{
+        width:7rem;
+        height:2.87rem;
+        font-size: 0.29rem;
+        color:#333;
+        border:1px solid #ccc;
+        border-radius:20px;
+        margin:0.2rem;
+        overflow: hidden;
+    }
+    .list1 .list1-img{
+        width:100%;
+        height:2.5rem;
+        float:left;
+        margin-right:0.26rem;
+        background:url(../img/huping.JPG);
+        background-size:100% 100%;
+    }
+    .list1 .list1-zi{
+        width:4.40rem;
+        float:left;
+        height:100%;
+        position:relative;
+    }
+    .list1 .list1-zi a{
+        color:#333;
+    }
+    .list1 .list1-zi span:nth-child(2){
+        position:absolute;
+        left:0;
+        color:#9f9f9f;
+        bottom:0.05rem;
+    }
+    .list1 .list1-zi span:nth-child(3){
+        position:absolute;
+        right:0;
+        bottom:0.05rem;
+        color:#9f9f9f;
+    }
+    .list1-1>a{
+        color:#333;
+        font-size:0.29rem;
+        margin:0;
+        padding:0;
+        display:block;
+        height:0.3rem;
+    }
+
+p{
+    color:#333;
+    margin:0;
+    padding:0.3rem;
+    padding-top:0;
+    font-size: 0.2rem;
+    text-indent: 2em;
+}
+/*导航*/
+    .hot{
+        width:100%;
+        height:1.95rem;
+        display:flex;
+        border-top:20px solid #fefefe;
+        justify-content:spance-around;
+        font-size: 0.18rem;
+        text-align: center;
+        background:#fefefe;
+    }
+    .hot-list .tubiao{
+        height:0.44rem;
+        width: 0.46rem;
+        margin:auto;
+        margin-bottom:0.08rem;
+    }
+
+    .hot-list:nth-child(1) .tubiao{
+        background:url(../img/nav1.png);
+        background-size:100% 100%;
+    }
+    .hot-list:nth-child(2) .tubiao{
+        background:url(../img/nav2.png);
+        background-size:100% 100%;
+    }
+    .hot-list:nth-child(3) .tubiao{
+        background:url(../img/nav3.png);
+        background-size:100% 100%;
+    }
+    .hot-list:nth-child(4) .tubiao{
+        background:url(../img/nav4.png);
+        background-size:100% 100%;
+    }
+    .hot-list:nth-child(5) .tubiao{
+        background:url(../img/nav5.png);
+        background-size:100% 100%;
+    }
+    .hot-list a{
+        color:#333;
+    }

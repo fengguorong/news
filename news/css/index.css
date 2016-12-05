@@ -1,0 +1,153 @@
+body,html,a{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+}
+/*闪屏页*/
+    .swiper-slide:nth-child(1){
+        background:#019aea ;
+        background-size:100% 100%;
+        width:100%;
+        height:100%;
+    }
+    .swiper-slide:nth-child(2){
+        background:#bf3d3d ;
+        background-size:100% 100%;
+        width:100%;
+        height:100%;
+    }
+    .swiper-slide:nth-child(3){
+        background:#15986e ;
+        background-size:100% 100%;
+        width:100%;
+        height:100%;
+    }
+    .swiper-slide:nth-child(4){
+        background:#bf3d3d ;
+        background-size:100% 100%;
+        width:100%;
+        height:100%;
+    }
+
+    .font{
+        color:#fff;
+        font-size:0.4rem;
+        text-align:center;
+        position:absolute;
+        left:0;
+        right:0;
+        margin:auto;
+        top:1.6rem;
+        font-family:  "微软雅黑",Arial;
+        transform-origin: left top;
+        transform:rotate(10deg);
+    }
+    .swiper-slide:nth-child(1) .font{
+        transform-origin: left top;
+        transform:rotate(10deg);
+    }
+    .font>span{
+         font-size:0.7rem;
+         line-height:1.5rem;
+     }
+    .swiper-slide:nth-child(3)>.font>span:nth-child(3){
+        color:#07E4BA;
+    }
+    .desk{
+        width:100%;
+        height:2.37rem;
+        position:absolute;
+        left:0;
+        bottom:0;
+        background:#FBC930;
+    }
+    .swiper-slide:nth-child(2) .desk{
+        height:3rem;
+    }
+    .desk-left{
+        width:4.17rem;
+        height:100%;
+        background:#FFD452;
+    }
+    .desk-page{
+        width:2rem;
+        height:2rem;
+        background:url(../img/page.png) no-repeat;
+        background-size:100% 100%;
+        position:absolute;
+        top:0.38rem;
+        right:1.1rem;
+    }
+
+    .hai{
+        width:100%;
+        height:3.77rem;
+        background:url("../img/mask2.png");
+        background-size:100% 100%;
+        position:absolute;
+        left:0;
+        bottom:0;
+    }
+    .swiper-slide:nth-child(1) .people{
+        width:5.05rem;
+        height:5.05rem;
+        background:url("../img/news1.png");
+        position:absolute;
+        background-size: 100% 100%;
+        left:0;right:0;margin:auto;
+        bottom:2rem;
+    }
+    .swiper-slide:nth-child(2) .people{
+        width:5.05rem;
+        height:5.05rem;
+        position:absolute;
+        left:0;right:0;margin:auto;
+        bottom:2rem;
+        background:url("../img/news2.png");
+        background-size:100% 100%;
+    }
+    .swiper-slide:nth-child(3) .people{
+        width:5.05rem;
+        height:5.05rem;
+        position:absolute;
+        left:0;right:0;margin:auto;
+        bottom:2rem;
+        background:url("../img/news3.png");
+        background-size:100% 100%;
+    }
+
+    .login{
+        width:2.77rem;
+        height:1rem;
+        background:#07E4BA;
+        border-radius: 0.5rem;
+        color:#fff;
+        position:absolute;
+        left:0;right:0;
+        margin:auto;
+        bottom:0.95rem;
+        font-size:0.5rem;
+        text-align:center;
+        line-height:1rem;
+    }
+    .backs{
+        width:100%;
+        height:100%;
+        position:absolute;
+        left:0;
+        top:0;
+        background:url("../img/back.png");
+        background-size:100% 100%;
+    }
+    .swiper-slide:nth-child(4) .backs{
+        background:url("../img/login.png");
+        background-size:100% 100%;
+    }
+    .login a{
+        display:block;
+        width:100%;
+        height:100%;
+        color:#fff;
+    }
