@@ -1,0 +1,148 @@
+body,html,a,li,ul,h6{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+    list-style: none;
+}
+*{
+    box-sizing:border-box;
+}
+/*头部*/
+    .header{
+        width:100%;
+        height:0.84rem;
+        background:#df3031;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 12;
+    }
+    .header span{
+        color:#fff;
+        font-size:0.4rem;
+        text-align: center;
+        line-height:0.84rem;
+        position:absolute;
+        top:0;bottom:0;left:0;right:0;
+        margin:auto;
+    }
+    .search{
+        width:0.4rem;
+        height:0.4rem;
+        position:absolute;
+        right:0.37rem;
+        top:0;bottom:0;
+        margin:auto;
+        background:url(../img/search.png);
+        background-size:100% 100%;
+        z-index:2;
+    }
+    .back-home{
+        width:0.6rem;
+        height:100%;
+        float: left;
+        font-size: 0.5rem;
+        color:#fff;
+        line-height: 0.84rem;
+        margin-left:0.2rem;
+        position:relative;
+        z-index:2;
+    }
+
+/*pe内容*/
+    .pe{
+        width:100%;
+        height:5rem;
+        margin-top:0.84rem;
+        font-size: 0.2rem;
+        text-align: center;
+        color:#333;
+    }
+    .pe-title{
+        width:100%;
+        height:0.5rem;
+        background:#ccc;
+        font-size: 0.2rem;
+        color:#333;
+        text-align: center;
+        line-height: 0.5rem;
+    }
+    .pe-con{
+        width:100%;
+        border-top:1px solid #ccc;
+        padding-top:.1rem;
+    }
+    .pe-pk{
+        width:100%;
+        padding:0.3rem;
+        height:2rem;
+        display:flex;
+        justify-content:space-around;
+        text-align: center;
+    }
+    .pe-pk .pk1-img{
+        width:0.5rem;
+        height:0.5rem;
+        background:url(../img/guohui.png);
+        background-size:100% 100%;
+        margin-bottom:0.1rem;
+    }
+    .pe-pk .pk2-img{
+        width:0.5rem;
+        height:0.5rem;
+        background:url(../img/guohui.png);
+        margin-bottom:0.1rem;
+        background-size:100% 100%;
+
+    }
+    .pe-pk span{
+        text-align: center;
+    }
+
+
+/*导航*/
+    .hot{
+        width:100%;
+        height:1.5rem;
+        display:flex;
+        border-top:20px solid #fefefe;
+        justify-content:space-around;
+        font-size: 0.18rem;
+        text-align: center;
+        background:#fefefe;
+        position:fixed;
+        bottom:0;
+        left:0;
+    }
+    .hot-list .tubiao{
+        height:0.44rem;
+        width: 0.46rem;
+        margin:auto;
+        margin-bottom:0.08rem;
+    }
+    .hot-list:nth-child(1) .tubiao{
+        background:url(../img/nav1.png);
+        background-size:100% 100%;
+    }
+    .hot-list:nth-child(2) .tubiao{
+        background:url(../img/nav2.png);
+        background-size:100% 100%;
+    }
+    .hot-list:nth-child(3) .tubiao{
+        background:url(../img/nav3.png);
+        background-size:100% 100%;
+    }
+    .hot-list:nth-child(4) .tubiao{
+        background:url(../img/nav4.png);
+        background-size:100% 100%;
+    }
+    .hot-list:nth-child(5) .tubiao{
+        background:url(../img/nav5.png);
+        background-size:100% 100%;
+    }
+    .hot-list a{
+        color:rgba(0,0,0,0.7);
+        font-size: 0.23rem;
+    }
