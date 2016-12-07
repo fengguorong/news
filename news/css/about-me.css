@@ -1,0 +1,185 @@
+body,html,a,li,ul,h6{
+    margin:0;
+    padding:0;
+    width:100%;
+    /*height:100%;*/
+    text-decoration:none;
+    list-style: none;
+}
+*{
+    box-sizing:border-box;
+}
+/*头部*/
+    .header{
+        width:100%;
+        height:3rem;
+        background:#df3031;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 12;
+    }
+    .header a{
+        color:#fff;
+        font-size:0.4rem;
+        text-align: center;
+        line-height:0.84rem;
+        display:block;
+        width:2rem;
+        height:0.5rem;
+        margin:auto;
+    }
+    .header .person{
+        margin:auto;
+        margin-top:0.5rem;
+        width:1rem;
+        height:1rem;
+        text-align: center;
+        line-height:1rem;
+        background:#E3E3E3;
+        border-radius:100%;
+    }
+    .header span:nth-child(3){
+        color:#ccc;
+        letter-spacing:0.05rem;
+        font-size:0.2rem;
+        text-align: center;
+        line-height:0.84rem;
+        display:block;
+        width:2rem;
+        height:0.5rem;
+        margin:auto;
+
+    }
+    .header .back-home{
+        width:0.6rem;
+        height:0.84rem;
+        float: left;
+        font-size: 0.5rem;
+        color:#fff;
+        line-height: 0.84rem;
+        margin-left:0.2rem;
+        position:absolute;
+        left:0;
+        top:0;
+        z-index:2;
+    }
+
+/*about-me-nav 导航*/
+    
+    .about-me-nav{
+        margin-top:3rem;
+        width:100%;
+        height:1.3rem;
+        border-bottom:3px solid #ccc;
+        display:flex;
+        justify-content:space-around;
+    }
+    .about-me-nav>li{
+        border-right:1px solid #ccc;
+    }        
+    .about-me-nav>li:nth-child(1) a:before{
+        content:"\e63f";
+        display: block;
+        font-family:"iconfont";
+        font-size: 0.6rem;
+        color:#333;
+        padding:0.1rem 0;
+        text-align: center;
+    }
+    .about-me-nav>li:nth-child(1) a:after{
+        content:"历史记录";
+        display: block;
+        font-family:"iconfont";
+        font-size: 0.2rem;
+        color:#333;
+        text-align: center;
+    }
+    .about-me-nav>li:nth-child(2) a:before{
+        content:"\e7f9";
+        display: block;
+        font-family:"iconfont";
+        font-size: 0.7rem;
+        color:#333;
+        padding-top:0.1rem;
+        text-align: center;
+    }
+    .about-me-nav>li:nth-child(2) a:after{
+        content:"评论";
+        display: block;
+        font-family:"iconfont";
+        font-size: 0.2rem;
+        color:#333;
+        text-align: center;
+    }
+    .about-me-nav>li:nth-child(3) a:before{
+        content:"\e6aa";
+        display: block;
+        font-family:"iconfont";
+        font-size: 0.6rem;
+        color:#333;
+        padding:0.1rem 0;
+        text-align: center;
+    }
+    .about-me-nav>li:nth-child(3) a:after{
+        content:"消息";
+        display: block;
+        font-family:"iconfont";
+        font-size: 0.2rem;
+        color:#333;
+        text-align: center;
+    }
+    .about-me-nav>li:nth-child(4) a:before{
+        content:"\e7dc";
+        display: block;
+        font-family:"iconfont";
+        font-size: 0.6rem;
+        color:#333;
+        padding:0.1rem 0;
+        text-align: center;
+    }
+    .about-me-nav>li:nth-child(4) a:after{
+        content:"收藏";
+        display: block;
+        font-family:"iconfont";
+        font-size: 0.2rem;
+        color:#333;
+        text-align: center;
+    }
+
+/*导航*/
+    .hot{
+        width:100%;
+        height:1.5rem;
+        display:flex;
+        border-top:20px solid #fefefe;
+        justify-content:spance-around;
+        font-size: 0.18rem;
+        text-align: center;
+        background:#fefefe;
+        position:fixed;
+        bottom:0;
+        left:0;
+    }
+    .hot-list .tubiao{
+        height:0.44rem;
+        width: 0.46rem;
+        margin:auto;
+        display:block;
+        margin-bottom:0.08rem;
+        font-family: "iconfont" !important;
+        color:#333;
+        font-size: 0.5rem;
+    }
+
+    .hot-list:nth-child(1) .tubiao{
+        font-family: "iconfont" !important;
+        color:#DF3031;
+        font-size: 0.5rem;
+       
+    }
+    
+    .hot-list a{
+        color:rgba(0,0,0,0.7);
+        font-size: 0.23rem;
+    }

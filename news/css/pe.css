@@ -72,7 +72,42 @@ body,html,a,li,ul,h6{
     .pe-con{
         width:100%;
         border-top:1px solid #ccc;
-        padding-top:.1rem;
+        /*padding-top:.1rem;*/
+    }
+    .pe-con .pe-time{
+        width:2rem;
+        height:0.5rem;
+        margin:auto;
+        line-height:0.5rem;
+        background:#DBDBDB;
+        position:relative;
+        text-align: center;
+    }
+    .pe-con .pe-time .pe-leftw{
+        float:left;
+        width:0.7rem;
+        height:0.5rem;
+        background:#fff;
+        transform-origin:left top;
+        transform:rotate(60deg);
+    }
+    .pe-con .pe-time span{
+        position:absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin:auto;
+    }
+    .pe-con .pe-time .pe-rightw{
+        position:absolute;
+        right:0;
+        top:0;
+        width:0.7rem;
+        height:0.5rem;
+        background:#fff;
+        transform-origin:right top;
+        transform:rotate(-60deg);
     }
     .pe-pk{
         width:100%;
@@ -82,14 +117,19 @@ body,html,a,li,ul,h6{
         justify-content:space-around;
         text-align: center;
     }
+    .pe-pk>div{
+        width:2.5rem;
+    }
     .pe-pk .pk1-img{
         width:0.5rem;
         height:0.5rem;
         background:url(../img/guohui.png);
         background-size:100% 100%;
+        margin:auto;
         margin-bottom:0.1rem;
     }
     .pe-pk .pk2-img{
+        margin:auto;
         width:0.5rem;
         height:0.5rem;
         background:url(../img/guohui.png);
@@ -98,6 +138,7 @@ body,html,a,li,ul,h6{
 
     }
     .pe-pk span{
+        display:block;
         text-align: center;
     }
 
@@ -108,7 +149,7 @@ body,html,a,li,ul,h6{
         height:1.5rem;
         display:flex;
         border-top:20px solid #fefefe;
-        justify-content:space-around;
+        justify-content:spance-around;
         font-size: 0.18rem;
         text-align: center;
         background:#fefefe;
@@ -120,28 +161,20 @@ body,html,a,li,ul,h6{
         height:0.44rem;
         width: 0.46rem;
         margin:auto;
+        display:block;
         margin-bottom:0.08rem;
+        font-family: "iconfont" !important;
+        color:#333;
+        font-size: 0.5rem;
     }
+
     .hot-list:nth-child(1) .tubiao{
-        background:url(../img/nav1.png);
-        background-size:100% 100%;
+        font-family: "iconfont" !important;
+        color:#DF3031;
+        font-size: 0.5rem;
+       
     }
-    .hot-list:nth-child(2) .tubiao{
-        background:url(../img/nav2.png);
-        background-size:100% 100%;
-    }
-    .hot-list:nth-child(3) .tubiao{
-        background:url(../img/nav3.png);
-        background-size:100% 100%;
-    }
-    .hot-list:nth-child(4) .tubiao{
-        background:url(../img/nav4.png);
-        background-size:100% 100%;
-    }
-    .hot-list:nth-child(5) .tubiao{
-        background:url(../img/nav5.png);
-        background-size:100% 100%;
-    }
+    
     .hot-list a{
         color:rgba(0,0,0,0.7);
         font-size: 0.23rem;

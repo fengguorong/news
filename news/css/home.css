@@ -234,29 +234,20 @@ body,html,a,li,ul,h6{
         height:0.44rem;
         width: 0.46rem;
         margin:auto;
+        display:block;
         margin-bottom:0.08rem;
+        font-family: "iconfont" !important;
+        color:#333;
+        font-size: 0.5rem;
     }
 
     .hot-list:nth-child(1) .tubiao{
-        background:url(../img/nav1.png);
-        background-size:100% 100%;
+        font-family: "iconfont" !important;
+        color:#DF3031;
+        font-size: 0.5rem;
+       
     }
-    .hot-list:nth-child(2) .tubiao{
-        background:url(../img/nav2.png);
-        background-size:100% 100%;
-    }
-    .hot-list:nth-child(3) .tubiao{
-        background:url(../img/nav3.png);
-        background-size:100% 100%;
-    }
-    .hot-list:nth-child(4) .tubiao{
-        background:url(../img/nav4.png);
-        background-size:100% 100%;
-    }
-    .hot-list:nth-child(5) .tubiao{
-        background:url(../img/nav5.png);
-        background-size:100% 100%;
-    }
+    
     .hot-list a{
         color:rgba(0,0,0,0.7);
         font-size: 0.23rem;

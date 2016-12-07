@@ -28,6 +28,18 @@ $(function(){
             
         }
     })*/
+//导航点击效果
+    var num;
+    $(".hot-list").click(function(){
+        num=$(this).index();
+    })
+    $(".tubiao").css("color","#333");
+    if(num!=0){
+        $(".tubiao").eq(num).css("color","#DF3031");
+    }else{
+        $(".tubiao").eq(0).css("color","#DF3031");
+    }
+    
 
     
 

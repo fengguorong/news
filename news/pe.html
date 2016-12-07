@@ -26,6 +26,14 @@
         p{
             max-height:9999999px;
         } 
+        @font-face {
+          font-family: 'iconfont';  /* project id 195406 */
+          src: url('iconfont/iconfont.eot');
+          src: url('iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+          url('iconfont/iconfont.woff') format('woff'),
+          url('iconfont/iconfont.ttf') format('truetype'),
+          url('iconfont/iconfont.svg#iconfont') format('svg');
+        }
     </style>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -48,7 +56,11 @@
             12月04日 周日（昨天）
         </div>
         <div class="pe-con">
-            <div class="pe-time">00:30 德甲</div>
+            <div class="pe-time">
+                <div class="pe-leftw"></div>
+                <span>00:30 德甲</span>
+                <div class="pe-rightw"></div>
+            </div>
             <div class="pe-pk">
                 <div class="pk1">
                     <div class="pk1-img"></div>
@@ -66,7 +78,60 @@
         </div>
 
         <div class="pe-con">
-            <div class="pe-time">00:30 德甲</div>
+            <div class="pe-time">
+                <div class="pe-leftw"></div>
+                <span>00:30 德甲</span>
+                <div class="pe-rightw"></div>
+            </div>
+            <div class="pe-pk">
+                <div class="pk1">
+                    <div class="pk1-img"></div>
+                    <span>Biarritz Ja</span>
+                </div>
+                <div class="pk-store">
+                    <span>1-1</span><br>
+                    <span>以结束</span>
+                </div>
+                <div class="pk2">
+                    <div class="pk2-img"></div>
+                    <span>法国</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- pe内容 -->
+    <div class="pe">
+        <div class="pe-title">
+            12月04日 周日（昨天）
+        </div>
+        <div class="pe-con">
+            <div class="pe-time">
+                <div class="pe-leftw"></div>
+                <span>00:30 德甲</span>
+                <div class="pe-rightw"></div>
+            </div>
+            <div class="pe-pk">
+                <div class="pk1">
+                    <div class="pk1-img"></div>
+                    <span>Biarritz Ja</span>
+                </div>
+                <div class="pk-store">
+                    <span>1-1</span><br>
+                    <span>以结束</span>
+                </div>
+                <div class="pk2">
+                    <div class="pk2-img"></div>
+                    <span>法国</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pe-con">
+            <div class="pe-time">
+                <div class="pe-leftw"></div>
+                <span>00:30 德甲</span>
+                <div class="pe-rightw"></div>
+            </div>
             <div class="pe-pk">
                 <div class="pk1">
                     <div class="pk1-img"></div>
@@ -87,20 +152,20 @@
 <!-- 导航 -->
     <ul class="hot">
         <li class="hot-list">
-            <div class="tubiao"></div>
-            <a href="">今日有料</a>
+            <a href="home.html" class="tubiao">&#xe602;</a>
+            <a href="home.html">今日有料</a>
         </li>
         <li class="hot-list">
-            <div class="tubiao"></div>
+            <a href="list-video.html" class="tubiao">&#xe601;</a>            
             <a href="list-video.html">凑热闹</a>
         </li>
         <li class="hot-list">
-            <div class="tubiao"></div>
+            <a href="pe.html" class="tubiao">&#xe691;</a>
             <a href="pe.html">体育</a>
         </li>
         <li class="hot-list">
-            <div class="tubiao"></div>
-            <a href="ablout-me.html">我</a>
+            <a href="about-me.html" class="tubiao">&#xe612;</a>
+            <a href="about-me.html">我</a>
         </li>
     </ul>
 </body>
