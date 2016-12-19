@@ -43,123 +43,177 @@
     <script src="js/swiper.animate1.0.2.min.js"></script>
     <script src="js/index.js"></script>
     <script src="iconfont/iconfont.js"></script>
+    <script src="js/iscroll.js"></script>
 </head>
 <body>
 <!-- 头部 -->
     <div class="header">
          <span>首页</span>
          <div class="search"></div>
-         <a href="home.html" class="back-home"> &lt;</a>
+         <a href="javascript:;" class="menuss-box">&#xe614;</a>
+         <ul class="menus">
+             <li class="close-nav">x</li>
+             <li class="menu-list">
+                <a href="list.html">
+                <div class="menu-list-img">&#xe638;</div>
+                <span>科技</span>
+                </a>
+             </li>
+             <li class="menu-list">
+                <a href="list.html">
+                <div class="menu-list-img">&#xe666;</div>
+                <span>军事</span>
+                </a>
+             </li>
+             <li class="menu-list">
+                <a href="list.html">
+                <div class="menu-list-img">&#xe622;</div>
+                <span>财经</span>
+                </a>
+             </li>
+             <li class="menu-list">
+                <a href="list.html">
+                <div class="menu-list-img">&#xe620;</div>
+                <span>社会</span>
+                </a>
+             </li>
+             <li class="menu-list">
+                <a href="list.html">
+                <div class="menu-list-img">&#xe646;</div>
+                <span>娱乐</span>
+                </a>
+             </li>
+             <li class="menu-list">
+                <a href="list.html">
+                <div class="menu-list-img">&#xe61f;</div>
+                <span>航空</span>
+                </a>
+             </li>
+             <li class="menu-list">
+                <a href="list.html">
+                <div class="menu-list-img">&#xe607;</div>
+                <span>汽车</span>
+                </a>
+             </li>
+         </ul>
     </div>
-
-<!-- //banner -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper banners">
-            <div class="swiper-slide ">
-                <div class="ban-font-box">
-                    <span class="ban-fonts">普及宪法知识</span>
-                </div>
+<div id="wrapper">
+    <div id="scroller">
+        <div class="up">已到顶部</div>
+        <ul>
+            <li>
+    <!-- //banner -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper banners">
+                <a class="swiper-slide" href="show.html">
+                    <div class="ban-font-box">
+                        <span class="ban-fonts">普及宪法知识</span>
+                    </div>
+                </a>
+                <a class="swiper-slide" href="show.html">
+                    <div class="ban-font-box">
+                        <span class="ban-fonts">普及宪法知识</span>
+                    </div>
+                </a>
+                <a class="swiper-slide" href="show.html">
+                    <div class="ban-font-box">
+                        <span class="ban-fonts">普及宪法知识</span>
+                    </div>
+                </a>
+                <a class="swiper-slide" href="show.html">
+                    <div class="ban-font-box">
+                        <span class="ban-fonts">普及宪法知识</span>
+                    </div>
+                </a>
             </div>
-            <div class="swiper-slide">
-                <div class="ban-font-box">
-                    <span class="ban-fonts">普及宪法知识</span>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="ban-font-box">
-                    <span class="ban-fonts">普及宪法知识</span>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="ban-font-box">
-                    <span class="ban-fonts">普及宪法知识</span>
-                </div>
-            </div>
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-pagination " id="wheels"></div>
         </div>
-        <!-- 如果需要滚动条 -->
-        <div class="swiper-pagination " id="wheels"></div>
+
+    <!-- 列表页1 -->
+        <ul class="list1">
+            <li class="list1-con">
+                <div class="list1-img"></div>
+                <div class="list1-zi">
+                    <a href="show.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
+                    <span class="list1-time">20分钟前</span>
+                    <span class="list1-read">1000次</span>
+                </div>
+                
+            </li>
+            <li class="list1-con">
+                <div class="list1-img"></div>
+                <div class="list1-zi">
+                    <a href="show.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
+                    <span class="list1-time">20分钟前</span>
+                    <span class="list1-read">1000次</span>
+                </div>
+                
+            </li>
+            <li class="list1-con">
+                <div class="list1-img"></div>
+                <div class="list1-zi">
+                    <a  href="show.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
+                    <span class="list1-time">20分钟前</span>
+                    <span class="list1-read">1000次</span>
+                </div>
+                
+            </li>
+            <!-- 列表1-1-->
+            <div class="list1-1">
+                <a href="show.html">发现第二地球，怎么才能去移民</a>
+                <div class="list1-1-img"></div>
+                <span style="font-size:20px">20分钟前</span>
+                <span style="font-size:20px">1000次</span>
+            </div>
+        </ul>
+
+    <!-- 列表页2 -->
+        <ul class="list1">
+            <li class="list1-con">
+                <div class="list1-img"></div>
+                <div class="list1-zi">
+                    <a  href="show.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
+                    <span class="list1-time">20分钟前</span>
+                    <span class="list1-read">1000次</span>
+                </div>
+                
+            </li>
+            <li class="list1-con">
+                <div class="list1-img"></div>
+                <div class="list1-zi">
+                    <a href="show.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
+                    <span class="list1-time">20分钟前</span>
+                    <span class="list1-read">1000次</span>
+                </div>
+                
+            </li>
+            <li class="list1-con">
+                <div class="list1-img"></div>
+                <div class="list1-zi">
+                    <a href="show.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
+                    <span class="list1-time">20分钟前</span>
+                    <span class="list1-read">1000次</span>
+                </div>
+                
+            </li>
+            <!-- 列表2-1-->
+            <div class="list1-1">
+                <a href="show.html">发现第二地球，怎么才能去移民</a>
+                <div class="list2-img">
+                    <div class="list2-1-img"></div>
+                    <div class="list2-1-img"></div>
+                    <div class="list2-1-img"></div>
+                </div>
+                <span style="font-size:20px">20分钟前</span>
+                <span style="font-size:20px">1000次</span>
+            </div>
+        </ul>
+            </li>
+        </ul>
+        <div class="down">正在加载...</div>
     </div>
-
-<!-- 列表页1 -->
-    <ul class="list1">
-        <li class="list1-con">
-            <div class="list1-img"></div>
-            <div class="list1-zi">
-                <a href="list.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
-                <span class="list1-time">20分钟前</span>
-                <span class="list1-read">1000次</span>
-            </div>
-            
-        </li>
-        <li class="list1-con">
-            <div class="list1-img"></div>
-            <div class="list1-zi">
-                <a href="list.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
-                <span class="list1-time">20分钟前</span>
-                <span class="list1-read">1000次</span>
-            </div>
-            
-        </li>
-        <li class="list1-con">
-            <div class="list1-img"></div>
-            <div class="list1-zi">
-                <a  href="list.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
-                <span class="list1-time">20分钟前</span>
-                <span class="list1-read">1000次</span>
-            </div>
-            
-        </li>
-        <!-- 列表1-1-->
-        <div class="list1-1">
-            <a href="list.html">发现第二地球，怎么才能去移民</a>
-            <div class="list1-1-img"></div>
-            <span style="font-size:20px">20分钟前</span>
-            <span style="font-size:20px">1000次</span>
-        </div>
-    </ul>
-
-<!-- 列表页2 -->
-    <ul class="list1">
-        <li class="list1-con">
-            <div class="list1-img"></div>
-            <div class="list1-zi">
-                <a  href="list.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
-                <span class="list1-time">20分钟前</span>
-                <span class="list1-read">1000次</span>
-            </div>
-            
-        </li>
-        <li class="list1-con">
-            <div class="list1-img"></div>
-            <div class="list1-zi">
-                <a href="list.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
-                <span class="list1-time">20分钟前</span>
-                <span class="list1-read">1000次</span>
-            </div>
-            
-        </li>
-        <li class="list1-con">
-            <div class="list1-img"></div>
-            <div class="list1-zi">
-                <a href="list.html">缅怀胡坪：此情可待成追忆 一生洗茶茶香永存 先生一路走好</a>
-                <span class="list1-time">20分钟前</span>
-                <span class="list1-read">1000次</span>
-            </div>
-            
-        </li>
-        <!-- 列表2-1-->
-        <div class="list1-1">
-            <a href="list.html">发现第二地球，怎么才能去移民</a>
-            <div class="list2-img">
-                <div class="list2-1-img"></div>
-                <div class="list2-1-img"></div>
-                <div class="list2-1-img"></div>
-            </div>
-            <span style="font-size:20px">20分钟前</span>
-            <span style="font-size:20px">1000次</span>
-        </div>
-    </ul>
-
+</div>
 
 <!-- 导航 -->
     <ul class="hot">
@@ -182,3 +236,4 @@
     </ul>
 </body>
 </html>
+

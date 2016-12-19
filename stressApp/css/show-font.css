@@ -1,0 +1,90 @@
+body,html,a,li,ul,h6,input{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    border:0;
+    text-decoration:none;
+    list-style: none;
+    /*overflow: hidden;*/
+}
+*{
+    box-sizing:border-box;
+}
+h3{
+	font-size:0.4rem;
+	width:100%;
+	height:1rem;
+	background:#1DC7C6;
+	margin:0;
+	color:#fff;
+	text-align:center;
+	line-height:1rem;
+}
+.backs{
+	position:absolute;
+	top:0.2rem;
+	left:0.3rem;
+	font-family:"iconfont";
+	font-size:0.6rem;
+	z-index:3;
+	color:#333;
+	width:0.5rem;
+    height:0.5rem;
+    color:#fff;
+}
+.sf-box{
+    width:100%;
+    padding:0rem 0.3rem;
+}
+/*标题*/
+.sf-box h4{
+	font-size:0.5rem;
+	font-weight:normal;
+    margin-bottom:0.2rem;
+}
+.sf-title>span{
+	font-size:0.3rem;
+    color:gray;
+    display:block;
+}
+.sf-title>span:nth-child(3){
+	font-size:0.5rem;
+    color:#1DC7C6;
+    margin:0.3rem 0 0.1rem;
+}
+.sf-title>span:nth-child(4){
+	font-size:0.35rem;
+    color:#fff;
+    width:2rem;
+    background:#1DC7C6;
+    text-align:center;
+}
+.sf-title>p{
+	font-size:0.35rem;
+    color:gray;
+    line-height:0.5rem;
+    text-indent:2em;
+}
+
+.sf-font-box>.sf-font-list>h5{
+	font-size:0.4rem;
+	text-align:center;
+	font-weight:normal;
+	background:url(../img/titles.png);
+	background-size:100% 100%;
+	width:100%;
+	height:1.4rem;
+	line-height:1.4rem;
+	color:#333;
+}
+.sf-font-box>.sf-font-list>.sf-font-img{
+	width:100%;
+	height:3rem;
+	overflow: hidden;
+}
+.sf-font-box>.sf-font-list>p{
+	font-size:0.35rem;
+	color:#333;
+	text-indent:2em;
+}

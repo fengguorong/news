@@ -1,0 +1,106 @@
+body,html,a,li,ul,h6,input{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    border:0;
+    text-decoration:none;
+    list-style: none;
+    overflow: hidden;
+}
+*{
+    box-sizing:border-box;
+}
+
+/*list列表*/
+    .lists{
+    	width:2.5rem;
+    	height:3.5rem;
+    	padding:0.2rem;
+    	padding-right:0.1rem;
+    	float:left;
+    }
+    .lists>a{
+    	display:block;
+    	width:100%;
+    	height:100%;
+    	color:#333;
+    	font-size:0.3rem;
+    }
+    .lists .lists-img{
+    	width:100%;
+    	height:2.5rem;
+    	text-align:center;
+    	position:relative;
+    }
+    .lists .lists-img img{
+    	width:100%;
+    	height:2.5rem;
+    }
+    .lists .lists-img span{
+    	width:100%;
+    	position:absolute;
+    	left:0;
+    	bottom:0;
+    	font-size:0.3rem;
+    	height:0.4rem;
+    	font-family:"iconfont";
+    	background:rgba(0,0,0,0.5);
+    	color:#fff;
+    	line-height:0.4rem;
+    }
+    
+/*导航*/
+    .hot{
+        width:100%;
+        height:1.5rem;
+        display:flex;
+        border-top:20px solid #fefefe;
+        justify-content:spance-around;
+        font-size: 0.18rem;
+        text-align: center;
+        background:#fefefe;
+        position:absolute;
+        bottom:0;
+        left:0;
+    }
+    .hot-list .tubiao{
+        height:0.44rem;
+        width: 0.46rem;
+        margin:auto;
+        display:block;
+        margin-bottom:0.08rem;
+        font-family: "iconfont" !important;
+        color:#333;
+        font-size: 0.5rem;
+    }
+
+    .hot-list:nth-child(1) .tubiao{
+        font-family: "iconfont" !important;
+        color:#DF3031;
+        font-size: 0.5rem;
+       
+    }
+    
+    .hot-list a{
+        color:rgba(0,0,0,0.7);
+        font-size: 0.23rem;
+    }
+    #wheels{
+    	height:0.5rem;
+    	line-height:0.5rem;
+    }
+/*iscrol*/
+    #wrapper {
+     
+        width: 100%;
+        overflow: hidden;
+    }
+    .up,.down{
+        font-size:0.3rem;
+        text-align: center;
+        height:1rem;
+        line-height: 1rem;
+        background:#ccc;
+        display:none;
+    }

@@ -1,0 +1,251 @@
+body,html,a,li,ul,h6,input{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    border:0;
+    text-decoration:none;
+    list-style: none;
+    overflow: hidden;
+}
+*{
+    box-sizing:border-box;
+}
+
+/*一周压力规划*/
+    .weeks{
+        width:100%;
+        height:4rem;
+        background:url(../img/weeks.jpg);
+        background-size:100% 100%;
+        position:relative;
+    }
+    .week-font{
+    	width:3rem;
+    	height:2rem;
+    	position:absolute;
+    	left:0;right:0;
+    	top:0;bottom:0;
+    	margin:auto;
+    	text-align:center;
+    	padding:0;line-height:0.7rem;
+    }
+    .week-font span{
+    	font-size:0.4rem;
+    	color:#fff;
+    }
+    .week-font a{
+    	width:2rem;
+    	height:0.5rem;
+    	background:#fff;
+    	color:deepskyblue;
+    	border-radius:0.15rem;
+    	cursor:pointer;
+    	outline:none;
+    	font-size:0.3rem;
+    	display:block;
+    	line-height:0.5rem;
+    	margin-left:0.4rem;
+    }
+
+/*top导航*/
+    .hot-top{
+        width:100%;
+        height:2rem;
+        display:flex;
+        border-top:20px solid #fefefe;
+        justify-content:spance-around;
+        font-size: 0.18rem;
+        text-align: center;
+        background:#fefefe;
+    }
+    .hot-top .hot-list .tubiao{
+        height:1rem;
+        width: 1rem;
+        border-radius:100%;
+        margin:auto;
+        display:block;
+        margin-bottom:0.08rem;
+        font-family: "iconfont" !important;
+        color:#333;
+        font-size: 0.5rem;
+        line-height:1rem;
+    }
+    .hot-top .hot-list:nth-child(1) .tubiao{
+        background:url(../img/high.jpg);
+        background-size:100% 100%;
+    }
+    .hot-top .hot-list:nth-child(2) .tubiao{
+        background:url(../img/betch.jpg);
+        background-size:100% 100%;
+    }
+    .hot-top .hot-list:nth-child(3) .tubiao{
+        background:url(../img/jing.jpg);
+        background-size:100% 100%;
+    }
+    .hot-top .hot-list:nth-child(4) .tubiao{
+        background:url(../img/sleep.jpg);
+        background-size:100% 100%;
+    }
+/*专注*提高效率*/
+    .absorbed{
+    	width:100%;
+    	height:3rem;
+    	background:#fff;
+    	margin-top:0.3rem;
+    }
+    .absorbed>a{
+    	width:50%;
+    	height:50%;
+    	float:left;
+    	line-height:1.5rem;position:relative;
+    }
+    .absorbed>a:nth-child(1){
+    	height:100%;
+        border-right:1px solid #ccc;text-align:center;
+        line-height:100%;
+    }
+    .absorbed>a:nth-child(1)>.icon{
+    	font-size:0.3rem;
+    	width:1rem;
+    	height:1rem;
+    	margin-top:0.6rem;
+    }
+    .absorbed>a:after{
+    	content:"专注·提高效率";
+    	font-size:0.3rem;
+    	display:block;
+    	color:#333;
+    }
+    .absorbed>a:nth-child(2):after{
+    	content:"减压百科";
+    	margin-left:0.4rem;
+    }
+    .absorbed>a:nth-child(3):after{
+    	content:"潮呼吸";
+    	margin-left:0.6rem;
+    }
+    .absorbed>a:nth-child(2){
+    	border-bottom:1px solid #ccc;
+    	position:relative;
+    }
+    .absorbed>a:nth-child(2):before{
+    	content:"\e602";
+    	font-family:"iconfont";
+    	color:#1CC6C5;
+    	position:absolute;
+    	top:0;bottom:0;right:0;
+    	margin:auto;
+    	font-size:0.7rem;
+    	margin-right:0.3rem;
+    }
+    .absorbed>a:nth-child(3):before{
+    	content:"\e60f";
+    	font-family:"iconfont";
+    	color:#0E6DB0;
+    	position:absolute;
+    	top:0;bottom:0;right:0;
+    	margin:auto;
+    	font-size:0.7rem;
+    	margin-right:0.45rem;
+    }
+/*banner*/
+    .swiper-container{
+        width:100%;
+        height:2rem;
+        background:#fff;
+        margin:0.3rem 0;
+        /*margin-top:0.84rem;*/
+        position:relative;
+    }
+
+    .swiper-pagination-bullet{
+        background:#fff;
+        border:1px solid #000;
+    }
+    .swiper-pagination-bullet-active{
+        background:#0E6DB0;
+        border:0;
+    }
+    .ban-font-box{
+        height:2rem;
+        width:100%;
+        display:block;
+    }
+    .swiper-container .ban-font-box  .ban-fonts{
+        margin:0;
+        float:left;
+        padding:0;
+        padding-left:0.2rem;
+        font-size: 0.5rem;
+        color:#333;
+        line-height:2rem;
+        /* width:100%;
+        height:2rem;
+        background:#fff; */
+    }   
+    .ban-font-box img{
+        width:2rem;
+        height:2rem;
+        margin:0;
+        position:absolute;
+        right:0.2rem;
+        top:0;
+        padding:0;
+        padding-right:0.2rem;
+    }
+
+/*导航*/
+    .hot{
+        width:100%;
+        height:1.5rem;
+        display:flex;
+        border-top:20px solid #fefefe;
+        justify-content:spance-around;
+        font-size: 0.18rem;
+        text-align: center;
+        background:#fefefe;
+        position:absolute;
+        bottom:0;
+        left:0;
+    }
+    .hot-list .tubiao{
+        height:0.44rem;
+        width: 0.46rem;
+        margin:auto;
+        display:block;
+        margin-bottom:0.08rem;
+        font-family: "iconfont" !important;
+        color:#333;
+        font-size: 0.5rem;
+    }
+
+    .hot-list:nth-child(1) .tubiao{
+        font-family: "iconfont" !important;
+        color:#DF3031;
+        font-size: 0.5rem;
+       
+    }
+    
+    .hot-list a{
+        color:rgba(0,0,0,0.7);
+        font-size: 0.23rem;
+    }
+    #wheels{
+    	height:0.5rem;
+    	line-height:0.5rem;
+    }
+/*iscrol*/
+    #wrapper {
+        background:#ccc;
+        width: 100%;
+        overflow: hidden;
+    }
+    .up,.down{
+        font-size:0.3rem;
+        text-align: center;
+        height:1rem;
+        line-height: 1rem;
+        background:#ccc;
+        display:none;
+    }
