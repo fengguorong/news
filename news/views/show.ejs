@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="x5-orientation" content="portrait | landscape" />  
+    <meta name="screen-orientation" content="portrait"> 
+    <meta name="x5-fullscreen" content="true" />  
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>详情页</title>
+    <style>
+        body{
+            font-family:Helvetica;
+            -webkit-text-size-adjust:100%  ;
+            -webkit-user-select:none ;
+        }
+        a,input{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        botton{
+            -webkit-appearance: none;
+        }
+        p{
+            max-height:9999999px;
+        } 
+        @font-face {
+          font-family: 'iconfont';  /* project id 195406 */
+          src: url('/iconfont/iconfont.eot');
+          src: url('/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+          url('/iconfont/iconfont.woff') format('woff'),
+          url('/iconfont/iconfont.ttf') format('truetype'),
+          url('/iconfont/iconfont.svg#iconfont') format('svg');
+        }
+    </style>
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/show.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/swiper.jquery.js"></script>
+    <script src="/js/swiper.animate1.0.2.min.js"></script>
+    <script src="/js/show.js"></script>
+    <script src="/js/iscroll.js"></script>
+</head>
+<body>
+<!-- 头部 -->
+<div class="header">
+    <span></span>
+    <%include header.ejs%>
+    <a href="/list/<%=shows[0].cid%>" class="back-home"> &lt;</a>
+</div>
+
+<div id="wrapper">
+    <div id="scroller">
+        <div class="up">没有更多内容</div>
+
+
+            <!-- 列表页1 -->
+<h2><%=shows[0].atitle%><br>
+    <span>2016/12/05 15:30</span>
+</h2>
+<ul class="list1">
+    <li class="list1-con">
+        <div class="list1-img">
+            <img src="/img/<%=shows[0].aimg.split(";")[0]%>" alt=""/>
+
+        </div>
+        <div class="list1-zi">
+            <a><!--<%=shows[0].atitle%>--></a>
+            <!-- <span class="list1-time">20分钟前</span> -->
+            <!-- <span class="list1-read">1000次</span> -->
+        </div>
+
+    </li>
+    
+</ul>
+
+<!-- 内容部分 -->
+    <p>
+        <%=shows[0].acon%>
+    </p>
+    <div id="liuyan-box">
+        <ul class="liuyan-show">
+
+            <%for(var i=0;i<liuyan.length;i++){%>
+            <li class="liuyan-list">
+                <div class="liuyan-con"><%=liuyan[i].con%></div>
+                <span class="liuyan-user"><%=liuyan[i].username%></span>
+                <span class="liuyan-time"><%=liuyan[i].time%></span>
+            </li>
+            <%}%>
+        </ul>
+        <div class="liuyanBtn">发表留言</div>
+        <form action="" method="get">
+            <input type="text" name="con" class="con"/>
+            <input type="hidden" value="<%=shows[0].id%>" name="aid" class="aid"/>
+            <input type="hidden" value="<%=username%>" name="username" class="username"/>
+            <span class="cancel">取消留言</span>
+            <span class="submit">提交留言</span>
+
+            <!--<input type="button" value="提交留言" class="submit"/>-->
+        </form>
+    </div>
+
+        <div class="down"><!--正在加载...--></div>
+    </div>
+</div>
+<!-- 导航 -->
+<%include footer.ejs%>
+</body>
+</html>

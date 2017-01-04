@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="x5-orientation" content="portrait | landscape" />  
+    <meta name="screen-orientation" content="portrait"> 
+    <meta name="x5-fullscreen" content="true" />   
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>首页</title>
+    <style>
+        body{
+            font-family:Helvetica;
+            -webkit-text-size-adjust:100%  ;
+            -webkit-user-select:none ;
+        }
+        a,input{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        button{
+            -webkit-appearance: none;
+        }
+        p{
+            max-height:9999999px;
+        } 
+        @font-face {
+          font-family: 'iconfont';  /* project id 195406 */
+          src: url('/iconfont/iconfont.eot');
+          src: url('/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+          url('/iconfont/iconfont.woff') format('woff'),
+          url('/iconfont/iconfont.ttf') format('truetype'),
+          url('/iconfont/iconfont.svg#iconfont') format('svg');
+        }
+
+
+         .login-reg{
+             position:absolute;
+             top:0px;
+             right:3px;
+             z-index:1222;
+             height:42px;
+             width:35%;
+             text-align:center;
+             line-height:42px;
+         }
+        .login-reg>div{
+            float:left;
+            width:40px;
+            height:30px;
+        }
+        .login-reg>div>a{
+            float:left;
+            color:#ccc;
+            font-size:15px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/swiper.jquery.js"></script>
+    <script src="/js/swiper.animate1.0.2.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/iconfont/iconfont.js"></script>
+    <script src="/js/iscroll.js"></script>
+    <script src="/js/showHid.js"></script>
+</head>
+<body>
+<!-- 头部 -->
+    <div class="header">
+         <span>首页</span>
+         <div class="search">
+             <form action="/search" class="searchInput">
+                 <input type="text" name="search"/>
+                 <input type="submit" values="搜索"/>
+             </form>
+         </div>
+         <a href="javascript:;" class="menuss-box">&#xe614;</a>
+         <ul class="menus">
+             <li class="close-nav">x</li>
+             <li class="menu-list">
+                             <a href="/list/2">
+                             <div class="menu-list-img">&#xe638;</div>
+                             <span>科技</span>
+                             </a>
+                          </li>
+                          <li class="menu-list">
+                             <a href="/list/3">
+                             <div class="menu-list-img">&#xe666;</div>
+                             <span>军事</span>
+                             </a>
+                          </li>
+                          <li class="menu-list">
+                             <a href="/list/4">
+                             <div class="menu-list-img">&#xe622;</div>
+                             <span>财经</span>
+                             </a>
+                          </li>
+                          <li class="menu-list">
+                             <a href="/list/6">
+                             <div class="menu-list-img">&#xe620;</div>
+                             <span>社会</span>
+                             </a>
+                          </li>
+                          <li class="menu-list">
+                             <a href="list.html">
+                             <div class="menu-list-img">&#xe646;</div>
+                             <span>娱乐</span>
+                             </a>
+                          </li>
+
+         </ul>
+    </div>
+<div id="wrapper">
+    <div id="scroller">
+        <div class="up">已到顶部</div>
+        <ul>
+            <li>
+    <!-- //banner -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper banners">
+            <%for(var i=0;i<4;i++){%>
+                <a class="swiper-slide" href="/show/<%=lists[i].id%>" showHid="<%=lists[i].id%>">
+                <div class="list1-img">
+                                <img src="/img/<%=lists[i].aimg.split(";")[0]%>" alt=""/>
+                            </div>
+                    <div class="ban-font-box">
+                        <span class="ban-fonts"><%=lists[i].atitle%></span>
+                    </div>
+                </a>
+            <%}%>
+            </div>
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-pagination " id="wheels"></div>
+        </div>
+
+    <!-- 列表页1 -->
+        <ul class="list1">
+            <%for(var i=4;i<7;i++){%>
+            <li class="list1-con">
+                <div class="list1-img">
+                <img src="/img/<%=lists[i].aimg.split(";")[0]%>" alt=""/>
+                </div>
+                <div class="list1-zi">
+                    <a href="/show/<%=lists[i].id%>" showHid="<%=lists[i].id%>" class="showHid"><%=lists[i].atitle%></a>
+                    <span class="list1-time">20分钟前</span>
+                    <span class="list1-read">1000次</span>
+                </div>
+
+            </li>
+            <%}%>
+            <!-- 列表1-1-->
+            <div class="list1-1">
+                <a href="/show/<%=lists[7].id%>" showHid="<%=lists[i].id%>"><%=lists[7].atitle%></a>
+                <div class="list1-1-img"></div>
+                <span style="font-size:20px">20分钟前</span>
+                <span style="font-size:20px">1000次</span>
+            </div>
+        </ul>
+
+    <!-- 列表页2 -->
+        <ul class="list1">
+            <%for(var i=8;i<11;i++){%>
+                        <li class="list1-con">
+                            <div class="list1-img">
+                            <img src="/img/<%=lists[i].aimg.split(";")[0]%>" alt=""/>
+                            </div>
+                            <div class="list1-zi">
+                                <a href="/show/<%=lists[i].id%>" showHid="<%=lists[i].id%>"><%=lists[i].atitle%></a>
+                                <span class="list1-time">20分钟前</span>
+                                <span class="list1-read">1000次</span>
+                            </div>
+
+                        </li>
+                        <%}%>
+
+            <!-- 列表2-1-->
+            <div class="list1-1">
+                <a href="/show/<%=lists[i].id%>" showHid="<%=lists[i].id%>"><%=lists[i].atitle%></a>
+                <div class="list2-img">
+                    <div class="list2-1-img"></div>
+                    <div class="list2-1-img"></div>
+                    <div class="list2-1-img"></div>
+                </div>
+                <span style="font-size:20px">20分钟前</span>
+                <span style="font-size:20px">1000次</span>
+            </div>
+        </ul>
+            </li>
+        </ul>
+        <div class="down">正在加载...</div>
+    </div>
+</div>
+
+<!-- 导航 -->
+<%include footer.ejs%>
+</body>
+</html>
+<script>
+    $(".search").click(function(){
+        $(".search .searchInput").css("display","block");
+    })
+    /*$(".searchInput input").blur(function(){
+        var search=$(this).val();
+        $.ajax({
+            url:"/search",
+            type:"get",
+            data:{search:search},
+            success:function(e){
+                if(e=="no"){
+                    alert("没有相应的内容");
+                }
+            }
+        })
+    })*/
+</script>

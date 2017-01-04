@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>message</title>
+    <script src="/js/jquery.js"></script>
+    <style>
+        .box{
+            width:600px;
+            height:600px;
+            position:absolute;
+            left:0;
+            right:0;
+            top:0 ;
+            bottom:0;
+            margin:auto;
+            /*line-height: 300px;*/
+            text-align: center;
+            border:2px solid black;
+            font-size:30px;
+        }
+        span{
+            color:red;
+        }
+        .noticTitle{
+            text-align: center;width:100%;
+            height:60px;
+        }
+        a{
+            font-size：30px;
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="noticTitle"><%=title%></div>
+    <div class="noticTitle"><%=con%></div>
+
+    <span url="<%=url%>">3</span>秒后返回请重新操作<br>
+    没有跳转请点击<a href="<%=url%>">这里</a>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        var url=$("span").attr("url");
+        var num=5;
+        setInterval(function(){
+            num--;
+            $("span").html(num);
+            if(num==0){
+                location.href=url;
+            }
+        },1000)
+    })
+</script>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="x5-orientation" content="portrait | landscape" />  
+    <meta name="screen-orientation" content="portrait"> 
+    <meta name="x5-fullscreen" content="true" /> 
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>列表页</title>
+    <style>
+        body{
+            font-family:Helvetica;
+            -webkit-text-size-adjust:100%  ;
+            -webkit-user-select:none ;
+        }
+        a,input{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        botton{
+            -webkit-appearance: none;
+        }
+        p{
+            max-height:9999999px;
+        } 
+        @font-face {
+          font-family: 'iconfont';  /* project id 195406 */
+          src: url('/iconfont/iconfont.eot');
+          src: url('/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+          url('/iconfont/iconfont.woff') format('woff'),
+          url('/iconfont/iconfont.ttf') format('truetype'),
+          url('/iconfont/iconfont.svg#iconfont') format('svg');
+        }
+    </style>
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/list-video.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/swiper.jquery.js"></script>
+    <script src="/js/swiper.animate1.0.2.min.js"></script>
+    <script src="/js/ajax.js"></script>
+    <script src="/js/iscroll.js"></script>
+</head>
+<body>
+<!-- 头部 -->
+<div class="header">
+    <span>热线资讯</span>
+    <%include header.ejs%>
+    <a href="/home/" class="back-home"> &lt;</a>
+</div>
+
+<div id="wrapper">
+    <div id="scroller">
+        <div class="up">没有更多内容</div>
+        <ul>
+            <li>
+
+            <!-- 列表页1 -->
+    <ul class="list1">
+        <%for(var i=0;i<4;i++){%>
+
+        <li class="list1-con">
+            <div class="list1-img">
+                <img src="/img/<%=lists[i].aimg.split(";")[0]%>" alt=""/>
+            </div>
+            <div class="list1-zi">
+                <a href="/show/<%=lists[i].id%>"><%=lists[i].atitle%></a>
+            </div>
+            <div class="share">
+                <div class="reads">000</div>
+                <div class="shares" attr="<%=lists[i].id%>">&#xe7dc;</div>
+            </div>
+        </li>
+        <%}%>
+    </ul>
+            </li>
+        </ul>
+        <div class="down">正在加载...</div>
+    </div>
+</div>
+<!-- 导航 -->
+<%include footer.ejs%>
+</body>
+</html>
+<script>
+    $(".shares").click(function(){
+        var id=$(this).attr("attr");
+        $.ajax({
+            url:"/add-uid",
+            type:"get",
+            data:{uid:1,id:id},
+            success:function(e){
+                if(e=="yes"){
+                    alert("收藏成功");
+                }else{
+                    alert("收藏失败，请重新收藏");
+                }
+            }
+        })
+    })
+</script>
